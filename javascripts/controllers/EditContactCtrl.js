@@ -1,0 +1,6 @@
+app.controller("EditContactCtrl", function() {
+
+
+
+
+});
