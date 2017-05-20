@@ -5,15 +5,15 @@ app.run(function (FIREBASE_CONFIG) {
 
 app.config( function($routeProvider) {
   $routeProvider
-    .when("/contacts/list", {
+    .when("/add/new", {
       templateUrl: "partials/add-new.html",
       controller: "AddNewCtrl"
     })
-    .when("/contacts/new", {
+    .when("/contact/list", {
       templateUrl: "partials/contact-list.html",
       controller: "ContactListCtrl"
     })
-    .when("/contact/edit/:id", {
+    .when("/eit/contact/:id", {
       templateUrl: "partials/edit-contact.html",
       controller: "EditContactCtrl"
     })

@@ -1,0 +1,40 @@
+{
+    "addressBook": {
+        "contact0": {
+            "phone": "270-555-1234",
+            "email": "email@email.com",
+            "firstName": "Ben",
+            "lastName": "Dover",
+            "address": {
+                "street": "123 Funky Town",
+                "city": "Nashville",
+                "state": "TN",
+                "zipcode": "37209"
+            }
+        },
+        "contact1": {
+            "phone": "293-555-1234",
+            "email": "name@email.com",
+            "firstName": "Mike",
+            "lastName": "Hunt",
+            "address": {
+                "street": "456 Margaritaville",
+                "city": "Nashville",
+                "state": "TN",
+                "zipcode": "37209"
+            }
+        },
+        "contact2": {
+            "phone": "652-555-1234",
+            "email": "exciting@email.com",
+            "firstName": "Seymore",
+            "lastName": "Butts",
+            "address": {
+                "street": "789 Elecric Ave",
+                "city": "Nashville",
+                "state": "TN",
+                "zipcode": "37209"
+            }
+        }
+    }
+}
