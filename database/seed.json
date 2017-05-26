@@ -1,6 +1,7 @@
 {
     "addressBook": {
         "contact0": {
+            "uid": "xW7X2XlFlzVcLptFon8EtYEUJMe2",
             "phone": "270-555-1234",
             "email": "email@email.com",
             "firstName": "Ben",
@@ -13,6 +14,7 @@
             }
         },
         "contact1": {
+            "uid": "xW7X2XlFlzVcLptFon8EtYEUJMe2",
             "phone": "293-555-1234",
             "email": "name@email.com",
             "firstName": "Mike",
@@ -25,6 +27,7 @@
             }
         },
         "contact2": {
+            "uid": "MMNdGtIXzJfsFzTWy8RWZ94dkYJ3",
             "phone": "652-555-1234",
             "email": "exciting@email.com",
             "firstName": "Seymore",
@@ -35,6 +38,16 @@
                 "state": "TN",
                 "zipcode": "37209"
             }
+        }
+    },
+    "users": {
+        "user0": {
+            "uid": "xW7X2XlFlzVcLptFon8EtYEUJMe2",
+            "username": "b"
+        },
+        "user1": {
+            "uid": "MMNdGtIXzJfsFzTWy8RWZ94dkYJ3",
+            "username": "c"
         }
     }
 }

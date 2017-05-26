@@ -26,8 +26,8 @@
         <!-- thingy in navItems, navItems must be on scope and must be an array -->
           <li><a href="#!/contact/list">All Contacts</a></li>
           <li><a href="#!/add/new">New Contacts</a></li>
-          <li><a href="#">Logout</a></li>
-          <li><a href="#">Authenticate</a></li>
+          <li><a href="#!/logout">Logout</a></li>
+          <li><a href="#!/auth">Authenticate</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -51,8 +51,11 @@
 <script type="text/javascript" src="./javascripts/AppConfig.js"></script>
 <script type="text/javascript" src="./javascripts/AppConstants.js"></script>
 
+<script type="text/javascript" src="./javascripts/factories/AuthFactory.js"></script>
+<script type="text/javascript" src="./javascripts/factories/UserFactory.js"></script>
 <script type="text/javascript" src="./javascripts/factories/itemFactory.js"></script>
 
+<script type="text/javascript" src="./javascripts/controllers/AuthCtrl.js"></script>
 <script type="text/javascript" src="./javascripts/controllers/AddNewCtrl.js"></script>
 <script type="text/javascript" src="./javascripts/controllers/ContactListCtrl.js"></script>
 <script type="text/javascript" src="./javascripts/controllers/EditContactCtrl.js"></script>

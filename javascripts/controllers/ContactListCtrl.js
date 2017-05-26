@@ -1,12 +1,11 @@
-app.controller("ContactListCtrl", function($scope, ItemFactory) {
+app.controller("ContactListCtrl", function($rootScope, $scope, ItemFactory) {
 
   $scope.contacts = [];
 
   let getItems = () => {
-    ItemFactory.getItemList().then((itemz) => {
-      console.log("itemz", itemz);
+    ItemFactory.getItemList($rootScope).then((itemz) => {
       $scope.contacts = itemz;
-      // console.log($scope.contacts);
+      console.log($scope.contacts);
     }).catch((error) => {
       console.log("get error", error);
     });
@@ -14,6 +13,14 @@ app.controller("ContactListCtrl", function($scope, ItemFactory) {
 
   getItems();
 
+
+  $scope.deleteItem = (id) => {
+      ItemFactory.deletz(id).then(() => {
+        getItems();
+      }).catch((error) => {
+        console.log("delteItem error", error);
+      });
+    };
 
 
 });

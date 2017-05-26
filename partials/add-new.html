@@ -1,13 +1,13 @@
 <div class="container col-xs-4 col-xs-offset-4" id="login-container">
   <!-- creates a 4 row column in center of screen -->
     <h3 class="text-center form-spacing">New Address</h3>
-    <input type="text" class="form-control form-spacing" placeholder="First Name" ng-model="addressBook.firstName" required autofocus>
-    <!-- <input type="text" class="form-control form-spacing" placeholder="Last Name" ng-model="newContact.lastName" required> -->
-    <input type="number" class="form-control form-spacing" placeholder="Phone Number" ng-model="addressBook.phone" required>
-    <input type="email" class="form-control form-spacing" placeholder="Enter Email" ng-model="addressBook.email" required>
-    <input type="text" class="form-control form-spacing" placeholder="street" ng-model="addressBook.address.street" required>
-    <input type="text" class="form-control form-spacing" placeholder="city" ng-model="addressBook.address.city" required>
-    <input type="text" class="form-control form-spacing" placeholder="state" ng-model="addressBook.address.state" required>
-    <input type="number" class="form-control form-spacing" placeholder="zipcode" ng-model="addressBook.address.zipcode" required>
+    <input type="text" class="form-control form-spacing" placeholder="First Name" ng-model="newUser.firstName" required autofocus>
+    <input type="text" class="form-control form-spacing" placeholder="Last Name" ng-model="newUser.lastName" required>
+    <input type="number" class="form-control form-spacing" placeholder="Phone Number" ng-model="newUser.phone" required>
+    <input type="email" class="form-control form-spacing" placeholder="Enter Email" ng-model="newUser.email" required>
+    <input type="text" class="form-control form-spacing" placeholder="street" ng-model="newUser.address.street" required>
+    <input type="text" class="form-control form-spacing" placeholder="city" ng-model="newUser.address.city" required>
+    <input type="text" class="form-control form-spacing" placeholder="state" ng-model="newUser.address.state" required>
+    <input type="number" class="form-control form-spacing" placeholder="zipcode" ng-model="newUser.address.zipcode" required>
     <button class="btn btn-lg btn-primary col-xs-12" ng-click="saveNewContact()">Save New Contact</button>
-  </div>
+</div>

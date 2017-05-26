@@ -1,13 +1,14 @@
 app.controller("AddNewCtrl", function($location, $scope, FIREBASE_CONFIG, ItemFactory) {
+$scope.newUser = {};
 
   $scope.saveNewContact = () => {
-    console.log("newtask", $scope.newTask);
-    ItemFactory.postNewItem($scope.newTask).then((response) => {
-      $scope.newTask = {};
-      $location.url("/contacts/new");
-      // getItems();
+    ItemFactory.postNewItem($scope.newUser).then((response) => {
+      $scope.newUser = {};
+      $location.url("/contact/list");
+      ItemFactory.getItemList();
     }).catch((error) => {
       console.log("Add error", error);
     });
   };
+
 });

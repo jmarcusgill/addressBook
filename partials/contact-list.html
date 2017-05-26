@@ -1,11 +1,11 @@
 <div class="row">
   <div ng-repeat="address in contacts" class="col-xs-4">
     <div class="panel panel-default">
-      <div class="panel-heading">{{address.firstName}} {{address.lastName}} <button class="btn btn-danger pull-right fa fa-trash-o" ng-click="deleteItem(address.id)"></button> <button class="btn btn-info fa fa-pencil-square-o pull-right"></button></div>
+      <div class="panel-heading">{{address.firstName}} {{address.lastName}} <button class="btn btn-danger pull-right fa fa-trash-o" ng-click="deleteItem(address.id)"></button> <button class="btn btn-info fa fa-pencil-square-o pull-right" ng-click="editContact()"></button></div>
       <div class="panel-body">
       <p>{{address.phone}}</p>
       <p>{{address.email}}</p>
-      <p>{{address.address.street}} {{address.address.city}}, {{address.address.state}} {{address.address.zipcode}}</p>
+      <p>{{address.address.street}} {{address.address.city}} {{address.address.state}} {{address.address.zipcode}}</p>
       </div>
     </div>
   </div>
